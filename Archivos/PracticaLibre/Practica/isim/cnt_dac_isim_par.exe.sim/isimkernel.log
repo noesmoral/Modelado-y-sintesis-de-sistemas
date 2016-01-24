@@ -1,0 +1,30 @@
+Command line:
+   cnt_dac_isim_par.exe
+     -simmode  gui
+     -sdfmax  /cnt_dac/=netgen/par/cnt_dac_timesim.sdf
+     -sdfroot  /
+     -simrunnum  0
+     -socket  49856
+
+Fri Mar 27 13:30:43 2015
+
+
+ Elaboration Time: 0.265201 sec
+
+ Current Memory Usage: 676.299 Meg
+
+ Total Signals          : 1386
+ Total Nets             : 911
+ Total Signal Drivers   : 817
+ Total Blocks           : 323
+ Total Primitive Blocks : 186
+ Total Processes        : 817
+ Total Traceable Variables  : 1942
+ Total Scalar Nets and Variables : 11272
+
+ Total Simulation Time: 0.343202 sec
+
+ Current Memory Usage: 990.872 Meg
+
+Fri Mar 27 13:31:21 2015
+

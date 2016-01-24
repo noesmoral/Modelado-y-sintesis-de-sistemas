@@ -1,0 +1,2 @@
+vhdl work "netgen/par/gen_dir_timesim.vhd"
+vhdl work "../Souce/gen_dir_tb.vhd"

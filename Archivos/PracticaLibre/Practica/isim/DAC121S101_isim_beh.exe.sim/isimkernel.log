@@ -1,0 +1,28 @@
+Command line:
+   DAC121S101_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49204
+
+Wed Apr 01 15:11:27 2015
+
+
+ Elaboration Time: 0.156001 sec
+
+ Current Memory Usage: 671.199 Meg
+
+ Total Signals          : 9
+ Total Nets             : 39
+ Total Signal Drivers   : 6
+ Total Blocks           : 3
+ Total Primitive Blocks : 3
+ Total Processes        : 6
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 529
+
+ Total Simulation Time: 0.171601 sec
+
+ Current Memory Usage: 671.199 Meg
+
+Wed Apr 01 15:11:45 2015
+

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\pedro\GIC\PracticaLibre\Practica\top_system1.ncd
+OUTFILE=C:\Users\pedro\GIC\PracticaLibre\Practica\top_system1.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=C:\Users\pedro\GIC\PracticaLibre\Practica
+LICENSE=WebPack
+USER_INFO=__0_0_0

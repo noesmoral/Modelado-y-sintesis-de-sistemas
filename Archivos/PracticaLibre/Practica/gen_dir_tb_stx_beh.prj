@@ -1,0 +1,2 @@
+vhdl isim_temp "../Souce/gen_dir.vhd"
+vhdl isim_temp "../Souce/gen_dir_tb.vhd"

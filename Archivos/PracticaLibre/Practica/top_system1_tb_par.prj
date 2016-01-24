@@ -1,0 +1,3 @@
+vhdl work "../Souce/epp_device.vhd"
+vhdl work "netgen/par/top_system1_timesim.vhd"
+vhdl work "../Souce/top_system1_tb.vhd"

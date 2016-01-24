@@ -1,0 +1,2 @@
+vhdl work "../Souce/cnt_epp.vhd"
+vhdl work "../Souce/top_system1.vhd"

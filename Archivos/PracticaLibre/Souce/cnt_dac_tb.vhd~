@@ -1,0 +1,86 @@
+-------------------------------------------------------------------------------
+-- Title      : Testbench for design "cnt_dac"
+-- Project    : 
+-------------------------------------------------------------------------------
+-- File       : cnt_dac_tb.vhd
+-- Author     :   <pedro@PEDRO-PC>
+-- Company    : 
+-- Created    : 2015-03-25
+-- Last update: 2015-03-25
+-- Platform   : 
+-- Standard   : VHDL'93/02
+-------------------------------------------------------------------------------
+-- Description: 
+-------------------------------------------------------------------------------
+-- Copyright (c) 2015 
+-------------------------------------------------------------------------------
+-- Revisions  :
+-- Date        Version  Author  Description
+-- 2015-03-25  1.0      pedro	Created
+-------------------------------------------------------------------------------
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+-------------------------------------------------------------------------------
+
+entity cnt_dac_tb is
+
+end entity cnt_dac_tb;
+
+-------------------------------------------------------------------------------
+
+architecture cnt_dac of cnt_dac_tb is
+
+  -- component ports
+  signal CLK     : std_logic;
+  signal RST     : std_logic;
+  signal DATO1   : std_logic_vector(7 downto 0);
+  signal DATO2   : std_logic_vector(7 downto 0);
+  signal DATO_OK : std_logic;
+  signal SYNC    : std_logic;
+  signal SCLK    : std_logic;
+  signal D1      : std_logic;
+  signal D2      : std_logic;
+
+  -- clock
+  signal Clk : std_logic := '1';
+
+begin  -- architecture cnt_dac
+
+  -- component instantiation
+  DUT: entity work.cnt_dac
+    port map (
+      CLK     => CLK,
+      RST     => RST,
+      DATO1   => DATO1,
+      DATO2   => DATO2,
+      DATO_OK => DATO_OK,
+      SYNC    => SYNC,
+      SCLK    => SCLK,
+      D1      => D1,
+      D2      => D2);
+
+  -- clock generation
+  Clk <= not Clk after 10 ns;
+
+  -- waveform generation
+  WaveGen_Proc: process
+  begin
+    -- insert signal assignments here
+    
+    wait until Clk = '1';
+  end process WaveGen_Proc;
+
+  
+
+end architecture cnt_dac;
+
+-------------------------------------------------------------------------------
+
+configuration cnt_dac_tb_cnt_dac_cfg of cnt_dac_tb is
+  for cnt_dac
+  end for;
+end cnt_dac_tb_cnt_dac_cfg;
+
+-------------------------------------------------------------------------------

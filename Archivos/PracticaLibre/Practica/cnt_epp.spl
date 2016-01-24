@@ -1,0 +1,16 @@
+[Inputs]
+CLK
+RST
+ASTRB
+DSTRB
+PWRITE
+=DATO_RD[7:0]=
+[Outputs]
+PWAIT
+CE_RD
+DIR_VLD
+DATO_VLD
+=DIR[7:0]=
+=DATO[7:0]=
+[BiDir]
+=DATA[7:0]=

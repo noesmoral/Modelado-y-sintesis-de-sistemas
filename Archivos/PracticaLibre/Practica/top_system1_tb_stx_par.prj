@@ -1,0 +1,3 @@
+vhdl isim_temp "../Souce/epp_device.vhd"
+vhdl isim_temp "netgen/par/top_system1_timesim.vhd"
+vhdl isim_temp "../Souce/top_system1_tb.vhd"

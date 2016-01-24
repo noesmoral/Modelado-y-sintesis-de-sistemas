@@ -1,0 +1,2 @@
+vhdl work "../Souce/gen_dir.vhd"
+vhdl work "../Souce/gen_dir_tb.vhd"

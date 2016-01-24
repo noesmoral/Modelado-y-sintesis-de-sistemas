@@ -1,0 +1,3 @@
+vhdl work "../Souce/DAC121S101.vhd"
+vhdl work "../Souce/cnt_dac.vhd"
+vhdl work "../Souce/cnt_dac_tb.vhd"

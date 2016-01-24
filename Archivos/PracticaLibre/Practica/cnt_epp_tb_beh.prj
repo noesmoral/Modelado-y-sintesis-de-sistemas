@@ -1,0 +1,3 @@
+vhdl work "../Souce/epp_device.vhd"
+vhdl work "../Souce/cnt_epp.vhd"
+vhdl work "../Souce/cnt_epp_tb.vhd"

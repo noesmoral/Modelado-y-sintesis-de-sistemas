@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/pedro/GIC/PracticaLibre/Practica/cnt_epp_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="cnt_epp_tb" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_textio" />
+            <top_module name="textio" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/cnt_epp_tb/DUT/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_epp_tb/DUT/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_epp_tb/DUT/pwait" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pwait</obj_property>
+      <obj_property name="ObjectShortName">pwait</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_epp_tb/DUT/dstrb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dstrb</obj_property>
+      <obj_property name="ObjectShortName">dstrb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_epp_tb/DUT/astrb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">astrb</obj_property>
+      <obj_property name="ObjectShortName">astrb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_epp_tb/DUT/pwrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pwrite</obj_property>
+      <obj_property name="ObjectShortName">pwrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_epp_tb/DUT/data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_epp_tb/DUT/dir" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dir[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dir[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_epp_tb/DUT/dir_vld" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dir_vld</obj_property>
+      <obj_property name="ObjectShortName">dir_vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_epp_tb/DUT/dato" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dato[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dato[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_epp_tb/DUT/dato_vld" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dato_vld</obj_property>
+      <obj_property name="ObjectShortName">dato_vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_epp_tb/DUT/ce_rd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ce_rd</obj_property>
+      <obj_property name="ObjectShortName">ce_rd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_epp_tb/DUT/dato_rd" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dato_rd[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dato_rd[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_epp_tb/DUT/dfas" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dfas</obj_property>
+      <obj_property name="ObjectShortName">dfas</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_epp_tb/DUT/dfds" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dfds</obj_property>
+      <obj_property name="ObjectShortName">dfds</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_epp_tb/DUT/asbd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">asbd</obj_property>
+      <obj_property name="ObjectShortName">asbd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_epp_tb/DUT/dsbd" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dsbd</obj_property>
+      <obj_property name="ObjectShortName">dsbd</obj_property>
+   </wvobject>
+</wave_config>

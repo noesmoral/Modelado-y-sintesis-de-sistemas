@@ -1,0 +1,30 @@
+Command line:
+   epp_device1_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49379
+
+Mon Apr 13 18:43:05 2015
+
+
+ Elaboration Time: 0.156001 sec
+
+ Current Memory Usage: 671.232 Meg
+
+ Total Signals          : 7
+ Total Nets             : 21
+ Total Signal Drivers   : 5
+ Total Blocks           : 5
+ Total Primitive Blocks : 5
+ Total Processes        : 2
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 1051
+In process epp_device1.vhd:31 
+ 
+
+ Total Simulation Time: 0.171601 sec
+
+ Current Memory Usage: 671.232 Meg
+
+Mon Apr 13 18:43:21 2015
+

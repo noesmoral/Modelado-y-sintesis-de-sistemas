@@ -1,0 +1,133 @@
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity cnt_epp is
+  port (
+    CLK      : in    std_logic;
+    RST      : in    std_logic;
+    ASTRB    : in    std_logic;
+    DSTRB    : in    std_logic;
+    DATA     : inout std_logic_vector(7 downto 0);
+    PWRITE   : in    std_logic;
+    PWAIT    : out   std_logic;
+    DATO_RD  : in    std_logic_vector(7 downto 0);
+    CE_RD    : out   std_logic;
+    DIR      : out   std_logic_vector (7 downto 0);
+    DIR_VLD  : out   std_logic;
+    DATO     : out   std_logic_vector (7 downto 0);
+    DATO_VLD : out   std_logic);
+end ;
+
+architecture rtl of cnt_epp is
+
+  --Salidas aux para los dectectores de flanco
+  signal DFAS : std_logic := '0';
+  signal DFDS : std_logic := '0';
+  signal ASBD : std_logic := '0';
+  signal DSBD : std_logic := '0';
+
+
+begin
+
+  -- purpose: Pone a 1 o 0 PWAIT en funcion de las entradas 
+  process (ASTRB, DSTRB) is
+  begin  -- process pw
+    if ASTRB='0' or DSTRB='0' then
+      PWAIT <= '1';
+    else
+      PWAIT <= '0';
+    end if;
+  end process pw;
+
+  -- purpose: Trasnfiere el contenido de DATO_RD a DATA gracias a una señal intermedia aux
+  process (DSTRB,PWRITE, DATO_RD) is 
+   variable aux : std_logic;       -- variable auxiliar ya que no se puede utili la señal diretamente
+  begin  -- process
+    if DSTRB='0' and PWRITE='1' then
+      CE_RD <= '1';
+      aux:='1';
+    else
+      CE_RD <= '0';
+      aux:='0';    --preguntar si usar asi o una vez cambiado CE_RD                   
+    end if;
+    if aux='1' then
+      DATA <= DATO_RD;
+    else
+      DATA <= (others => 'Z'); 
+    end if;
+  end process;
+
+  -- purpose: Detector de flanco de subida de la señal ASTRB parte 1/3
+  process (CLK, RST) is 
+  begin  -- process
+    if RST = '1' then                   -- asynchronous reset (active high)
+      ASBD <= '0';   
+    elsif CLK'event and CLK = '1' then  -- rising clock edge
+      ASBD <= ASTRB;
+    end if;
+  end process;
+
+  -- Detector flanco
+  DFAS <= '1' when (ASTRB='1' and ASBD='0') else '0';
+
+  -- purpose: ASTRB parte 2/3
+  process (CLK, RST) is
+  begin  -- process
+    if RST = '1' then             -- asynchronous reset (active high)
+      DIR_VLD <= '0';
+    elsif CLK'event and CLK = '1' then  -- rising clock edge
+      DIR_VLD <= DFAS;
+    end if;
+  end process;
+
+   -- purpose: ASTRB parte 3/3
+  process (CLK, RST) is
+  begin  -- process
+    if RST = '1' then             -- asynchronous reset (active high)
+      DIR <= (others => '0');
+    elsif CLK'event and CLK = '1' then  -- rising clock edge
+      if DFAS='1' then
+        DIR <= DATA;
+      end if;
+    end if;
+  end process;
+
+
+    -- purpose: Detector de flanco de subida de la señal DSTRB parte 1/3
+  process (CLK, RST) is 
+   variable aux2 : std_logic := '0';
+  begin  -- process
+    if RST = '1' then                   -- asynchronous reset (active high)
+      DSBD <=  '0';
+    elsif CLK'event and CLK = '1' then  -- rising clock edge
+      DSBD <= DSTRB;
+    end if;
+  end process;
+
+  -- detector de flanco
+  DFDS <= '1' when (DSTRB='1' and DSBD='0') else '0';
+
+  -- purpose: DSTRB parte 2/3
+  process (CLK, RST) is
+  begin  -- process
+    if RST = '1' then             -- asynchronous reset (active high)
+      DATO_VLD <= '0';
+    elsif CLK'event and CLK = '1' then  -- rising clock edge
+      DATO_VLD <= DFDS;
+    end if;
+  end process;
+
+   -- purpose: DSTRB parte 3/3
+  process (CLK, RST) is
+  begin  -- process
+    if RST = '1' then             -- asynchronous reset (active high)
+      DATO <= (others => '0');
+    elsif CLK'event and CLK = '1' then  -- rising clock edge
+      if DFDS='1' then
+        DATO <= DATA;
+      end if;
+    end if;
+  end process;
+
+end rtl;

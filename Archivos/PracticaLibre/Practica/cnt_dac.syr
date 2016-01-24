@@ -1,0 +1,447 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: cnt_dac.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "cnt_dac.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "cnt_dac"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : cnt_dac
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\pedro\GIC\PracticaLibre\Souce\cnt_dac.vhd" into library work
+Parsing entity <cnt_dac>.
+Parsing architecture <RTL> of entity <cnt_dac>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <cnt_dac> (architecture <RTL>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <cnt_dac>.
+    Related source file is "C:\Users\pedro\GIC\PracticaLibre\Souce\cnt_dac.vhd".
+    Found 8-bit register for signal <D2BD>.
+    Found 8-bit register for signal <D1BD>.
+    Found 2-bit register for signal <std_act>.
+    Found 4-bit register for signal <SCDATA>.
+    Found 2-bit register for signal <cnt>.
+    Found 1-bit register for signal <Q0>.
+    Found 1-bit register for signal <SCLK>.
+    Found finite state machine <FSM_0> for signal <std_act>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | RST (negative)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | rep                                            |
+    | Power Up State     | rep                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 2-bit adder for signal <cnt[1]_GND_4_o_add_12_OUT> created at line 1241.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_8_OUT<3:0>> created at line 1308.
+    Found 1-bit 10-to-1 multiplexer for signal <D1> created at line 76.
+    Found 1-bit 10-to-1 multiplexer for signal <D2> created at line 99.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <cnt_dac> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 2-bit adder                                           : 1
+ 4-bit subtractor                                      : 1
+# Registers                                            : 6
+ 1-bit register                                        : 2
+ 2-bit register                                        : 1
+ 4-bit register                                        : 1
+ 8-bit register                                        : 2
+# Multiplexers                                         : 6
+ 1-bit 10-to-1 multiplexer                             : 2
+ 1-bit 2-to-1 multiplexer                              : 2
+ 2-bit 2-to-1 multiplexer                              : 1
+ 4-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <cnt_dac>.
+The following registers are absorbed into counter <SCDATA>: 1 register on signal <SCDATA>.
+Unit <cnt_dac> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 2-bit adder                                           : 1
+# Counters                                             : 1
+ 4-bit down counter                                    : 1
+# Registers                                            : 20
+ Flip-Flops                                            : 20
+# Multiplexers                                         : 5
+ 1-bit 10-to-1 multiplexer                             : 2
+ 1-bit 2-to-1 multiplexer                              : 2
+ 2-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <std_act[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ rep   | 00
+ tx    | 01
+ r1    | 11
+ r2    | 10
+-------------------
+INFO:Xst:2261 - The FF/Latch <cnt_0> in Unit <cnt_dac> is equivalent to the following FF/Latch, which will be removed : <Q0> 
+INFO:Xst:2261 - The FF/Latch <cnt_1> in Unit <cnt_dac> is equivalent to the following FF/Latch, which will be removed : <Q1> 
+
+Optimizing unit <cnt_dac> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block cnt_dac, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 24
+ Flip-Flops                                            : 24
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : cnt_dac.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 19
+#      INV                         : 2
+#      LUT2                        : 3
+#      LUT3                        : 4
+#      LUT4                        : 4
+#      LUT5                        : 1
+#      LUT6                        : 5
+# FlipFlops/Latches                : 24
+#      FDC                         : 4
+#      FDCE                        : 20
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 22
+#      IBUF                        : 18
+#      OBUF                        : 4
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               8  out of  54576     0%  
+ Number of Slice LUTs:                   19  out of  27288     0%  
+    Number used as Logic:                19  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     19
+   Number with an unused Flip Flop:      11  out of     19    57%  
+   Number with an unused LUT:             0  out of     19     0%  
+   Number of fully used LUT-FF pairs:     8  out of     19    42%  
+   Number of unique control sets:         4
+
+IO Utilization: 
+ Number of IOs:                          23
+ Number of bonded IOBs:                  23  out of    218    10%  
+    IOB Flip Flops/Latches:              16
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 24    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.582ns (Maximum Frequency: 387.364MHz)
+   Minimum input arrival time before clock: 3.790ns
+   Maximum output required time after clock: 5.880ns
+   Maximum combinational path delay: 5.649ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 2.582ns (frequency: 387.364MHz)
+  Total number of paths / destination ports: 42 / 18
+-------------------------------------------------------------------------
+Delay:               2.582ns (Levels of Logic = 1)
+  Source:            std_act_FSM_FFd2 (FF)
+  Destination:       SCDATA_0 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: std_act_FSM_FFd2 to SCDATA_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              5   0.447   0.819  std_act_FSM_FFd2 (std_act_FSM_FFd2)
+     LUT3:I1->O            4   0.203   0.683  Stado_Rep_RST_OR_4_o1 (Stado_Rep_RST_OR_4_o)
+     FDCE:CLR                  0.430          SCDATA_0
+    ----------------------------------------
+    Total                      2.582ns (1.080ns logic, 1.502ns route)
+                                       (41.8% logic, 58.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 59 / 57
+-------------------------------------------------------------------------
+Offset:              3.790ns (Levels of Logic = 2)
+  Source:            DATO_OK (PAD)
+  Destination:       cnt_0 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: DATO_OK to cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            19   1.222   1.319  DATO_OK_IBUF (DATO_OK_IBUF)
+     LUT4:I0->O            2   0.203   0.616  RE_CB_RST_OR_9_o1 (RE_CB_RST_OR_9_o)
+     FDC:CLR                   0.430          cnt_0
+    ----------------------------------------
+    Total                      3.790ns (1.855ns logic, 1.935ns route)
+                                       (48.9% logic, 51.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 31 / 4
+-------------------------------------------------------------------------
+Offset:              5.880ns (Levels of Logic = 3)
+  Source:            SCDATA_0 (FF)
+  Destination:       D1 (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: SCDATA_0 to D1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             9   0.447   1.194  SCDATA_0 (SCDATA_0)
+     LUT6:I0->O            1   0.203   0.684  Mmux_D111 (Mmux_D11)
+     LUT4:I2->O            1   0.203   0.579  Mmux_D113 (D1_OBUF)
+     OBUF:I->O                 2.571          D1_OBUF (D1)
+    ----------------------------------------
+    Total                      5.880ns (3.424ns logic, 2.456ns route)
+                                       (58.2% logic, 41.8% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               5.649ns (Levels of Logic = 3)
+  Source:            DATO_OK (PAD)
+  Destination:       SYNC (PAD)
+
+  Data Path: DATO_OK to SYNC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            19   1.222   1.072  DATO_OK_IBUF (DATO_OK_IBUF)
+     LUT3:I2->O            1   0.205   0.579  SYNC1 (SYNC_OBUF)
+     OBUF:I->O                 2.571          SYNC_OBUF (SYNC)
+    ----------------------------------------
+    Total                      5.649ns (3.998ns logic, 1.651ns route)
+                                       (70.8% logic, 29.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    2.582|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 13.02 secs
+ 
+--> 
+
+Total memory usage is 258772 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

@@ -1,0 +1,3 @@
+vhdl isim_temp "../Souce/DAC121S101.vhd"
+vhdl isim_temp "../Souce/cnt_dac.vhd"
+vhdl isim_temp "../Souce/cnt_dac_tb.vhd"

@@ -1,0 +1,30 @@
+Command line:
+   gen_dir_tb_isim_par.exe
+     -simmode  gui
+     -sdfmax  /DUT/=netgen/par/gen_dir_timesim.sdf
+     -sdfroot  /DUT
+     -simrunnum  0
+     -socket  49205
+
+Sat Apr 18 13:32:59 2015
+
+
+ Elaboration Time: 0.358802 sec
+
+ Current Memory Usage: 692.908 Meg
+
+ Total Signals          : 3952
+ Total Nets             : 2767
+ Total Signal Drivers   : 2302
+ Total Blocks           : 795
+ Total Primitive Blocks : 459
+ Total Processes        : 2290
+ Total Traceable Variables  : 5191
+ Total Scalar Nets and Variables : 30078
+
+ Total Simulation Time: 12.7297 sec
+
+ Current Memory Usage: 692.908 Meg
+
+Sat Apr 18 13:35:19 2015
+

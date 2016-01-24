@@ -1,0 +1,2 @@
+Practica Modelado y Sintesis de Sistemas UAH GIC 14/15
+En esta carpeta se encuentra la practica de dicha asignatura con su correspondiente memoria en la que se explica el funcionamiento y las caracteristicas, en la carpeta de archivos se incluyen los archivos de la practica final y los originales, ademas se adjuntan unos ejemplos de sentencia de VHDL lenguaje en el que esta realizada dicha practica.

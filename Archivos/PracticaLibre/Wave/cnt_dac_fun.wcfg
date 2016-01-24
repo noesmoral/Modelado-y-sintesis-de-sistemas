@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/pedro/GIC/PracticaLibre/Practica/cnt_dac_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="cnt_dac_tb" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="20" />
+   <wvobject fp_name="/cnt_dac_tb/DUT/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_dac_tb/DUT/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_dac_tb/DUT/dato1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dato1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dato1[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_dac_tb/DUT/dato2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dato2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dato2[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_dac_tb/DUT/dato_ok" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dato_ok</obj_property>
+      <obj_property name="ObjectShortName">dato_ok</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_dac_tb/DUT/sync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sync</obj_property>
+      <obj_property name="ObjectShortName">sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_dac_tb/DUT/sclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sclk</obj_property>
+      <obj_property name="ObjectShortName">sclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_dac_tb/DUT/d1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">d1</obj_property>
+      <obj_property name="ObjectShortName">d1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_dac_tb/DUT/d2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">d2</obj_property>
+      <obj_property name="ObjectShortName">d2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_dac_tb/DUT/d1bd" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">d1bd[15:0]</obj_property>
+      <obj_property name="ObjectShortName">d1bd[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_dac_tb/DUT/d2bd" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">d2bd[15:0]</obj_property>
+      <obj_property name="ObjectShortName">d2bd[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_dac_tb/DUT/scdata" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">scdata[3:0]</obj_property>
+      <obj_property name="ObjectShortName">scdata[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_dac_tb/DUT/cec" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cec</obj_property>
+      <obj_property name="ObjectShortName">cec</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_dac_tb/DUT/q0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">q0</obj_property>
+      <obj_property name="ObjectShortName">q0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_dac_tb/DUT/q1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">q1</obj_property>
+      <obj_property name="ObjectShortName">q1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_dac_tb/DUT/fintx" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">fintx</obj_property>
+      <obj_property name="ObjectShortName">fintx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_dac_tb/DUT/stado_rep" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">stado_rep</obj_property>
+      <obj_property name="ObjectShortName">stado_rep</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_dac_tb/DUT/re_cb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">re_cb</obj_property>
+      <obj_property name="ObjectShortName">re_cb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_dac_tb/DUT/std_act" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">std_act</obj_property>
+      <obj_property name="ObjectShortName">std_act</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cnt_dac_tb/DUT/prox_std" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">prox_std</obj_property>
+      <obj_property name="ObjectShortName">prox_std</obj_property>
+   </wvobject>
+</wave_config>

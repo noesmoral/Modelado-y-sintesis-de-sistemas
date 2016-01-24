@@ -1,0 +1,24 @@
+NET "RELOJ"   LOC = "L15"; 
+
+# onBoard USB controller
+ NET "ASTRB"   LOC = "B9"; 
+ NET "DSTRB"   LOC = "A9"; 
+ NET "PWRITE"   LOC = "C15"; 
+ NET "PWAIT"   LOC = "F13"; 
+ NET "DATA<0>"  LOC = "A2";  
+ NET "DATA<1>"  LOC = "D6"; 
+ NET "DATA<2>"  LOC = "C6";  
+ NET "DATA<3>"  LOC = "B3";  
+ NET "DATA<4>"  LOC = "A3";  
+ NET "DATA<5>"  LOC = "B4";  
+ NET "DATA<6>"  LOC = "A4"; 
+ NET "DATA<7>"  LOC = "C5";  
+
+# onBoard Pushbuttons
+ NET "RST"   LOC = "T15";
+
+# DAC
+NET "SYNC"  LOC = "T3"    ;
+NET "D1"  LOC = "R3"    ;
+NET "D2"  LOC = "P6"    ;
+NET "SCLK"  LOC = "N5"    ;

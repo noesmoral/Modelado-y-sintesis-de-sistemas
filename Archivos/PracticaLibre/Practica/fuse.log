@@ -1,0 +1,49 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "C:/Users/pedro/GIC/PracticaLibre/Practica/gen_funciones_tb_isim_beh.exe" -prj "C:/Users/pedro/GIC/PracticaLibre/Practica/gen_funciones_tb_beh.prj" "work.gen_funciones_tb" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/pedro/GIC/PracticaLibre/Practica/../Souce/gen_dir.vhd" into library work
+Parsing VHDL file "C:/Users/pedro/GIC/PracticaLibre/Practica/../Souce/dpram_mem.vhd" into library work
+Parsing VHDL file "C:/Users/pedro/GIC/PracticaLibre/Practica/../Souce/cnt_epp.vhd" into library work
+Parsing VHDL file "C:/Users/pedro/GIC/PracticaLibre/Practica/../Souce/cnt_dpram.vhd" into library work
+Parsing VHDL file "C:/Users/pedro/GIC/PracticaLibre/Practica/../Souce/cnt_dac.vhd" into library work
+Parsing VHDL file "C:/Users/pedro/GIC/PracticaLibre/Practica/ipcore_dir/dcm.vhd" into library work
+Parsing VHDL file "C:/Users/pedro/GIC/PracticaLibre/Practica/../Souce/gen_funciones.vhd" into library work
+Parsing VHDL file "C:/Users/pedro/GIC/PracticaLibre/Practica/../Souce/epp_device1.vhd" into library work
+Parsing VHDL file "C:/Users/pedro/GIC/PracticaLibre/Practica/../Souce/gen_funciones_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package textio
+Compiling package std_logic_textio
+Compiling architecture sim of entity epp_device1 [epp_device1_default]
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package vcomponents
+Compiling package vital_timing
+Compiling package vital_primitives
+Compiling package vpkg
+Compiling architecture ibufg_v of entity IBUFG [\IBUFG("DONT_CARE","0",true,"DEF...]
+Compiling architecture dcm_sp_clock_divide_by_2_v of entity dcm_sp_clock_divide_by_2 [dcm_sp_clock_divide_by_2_default]
+Compiling architecture dcm_sp_maximum_period_check_v of entity dcm_sp_maximum_period_check [\dcm_sp_maximum_period_check("*"...]
+Compiling architecture dcm_sp_maximum_period_check_v of entity dcm_sp_maximum_period_check [\dcm_sp_maximum_period_check("*"...]
+Compiling architecture dcm_sp_clock_lost_v of entity dcm_sp_clock_lost [dcm_sp_clock_lost_default]
+Compiling architecture dcm_sp_v of entity DCM_SP [\DCM_SP(true,"*",true,false,2.0,...]
+Compiling architecture bufg_v of entity BUFG [bufg_default]
+Compiling architecture xilinx of entity dcm [dcm_default]
+Compiling architecture rtl of entity cnt_epp [cnt_epp_default]
+Compiling architecture rtl of entity cnt_dpram [cnt_dpram_default]
+Compiling architecture rtl of entity dpram_mem [dpram_mem_default]
+Compiling architecture rtl of entity gen_dir [gen_dir_default]
+Compiling architecture rtl of entity cnt_dac [cnt_dac_default]
+Compiling architecture rtl of entity gen_funciones [gen_funciones_default]
+Compiling architecture gen_funciones of entity gen_funciones_tb
+Time Resolution for simulation is 1ps.
+Waiting for 19 sub-compilation(s) to finish...
+Compiled 42 VHDL Units
+Built simulation executable C:/Users/pedro/GIC/PracticaLibre/Practica/gen_funciones_tb_isim_beh.exe
+Fuse Memory Usage: 56340 KB
+Fuse CPU Usage: 1902 ms

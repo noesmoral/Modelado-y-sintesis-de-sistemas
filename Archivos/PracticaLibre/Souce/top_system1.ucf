@@ -1,0 +1,41 @@
+NET "CLK"   LOC = "L15"; 
+
+
+# onBoard USB controller
+ NET "ASTRB"   LOC = "B9"; 
+ NET "DSTRB"   LOC = "A9"; 
+ NET "PWRITE"   LOC = "C15"; 
+ NET "PWAIT"   LOC = "F13"; 
+ NET "DATA<0>"  LOC = "A2";  
+ NET "DATA<1>"  LOC = "D6"; 
+ NET "DATA<2>"  LOC = "C6";  
+ NET "DATA<3>"  LOC = "B3";  
+ NET "DATA<4>"  LOC = "A3";  
+ NET "DATA<5>"  LOC = "B4";  
+ NET "DATA<6>"  LOC = "A4"; 
+ NET "DATA<7>"  LOC = "C5";  
+
+# onBoard Pushbuttons
+
+ NET "PSH_BUTTON"  LOC = "F5"; 
+ NET "RST"   LOC = "T15";
+# onBoard LEDS
+ NET "LEDS_O<0>" LOC = "U18";
+ NET "LEDS_O<1>" LOC = "M14";
+ NET "LEDS_O<2>" LOC = "N14";
+ NET "LEDS_O<3>" LOC = "L14";
+ NET "LEDS_O<4>" LOC = "M13"; 
+ NET "LEDS_O<5>" LOC = "D4"; 
+ NET "LEDS_O<6>" LOC = "P16";
+ NET "LEDS_O<7>" LOC = "N12";
+
+
+# onBoard SWITCHES
+ NET "SWITCHES_I<0>" LOC = "A10";
+ NET "SWITCHES_I<1>" LOC = "D14";
+ NET "SWITCHES_I<2>" LOC = "C14";
+ NET "SWITCHES_I<3>" LOC = "P15";
+ NET "SWITCHES_I<4>" LOC = "P12"; 
+ NET "SWITCHES_I<5>" LOC = "R5"; 
+ NET "SWITCHES_I<6>" LOC = "T5"; 
+ NET "SWITCHES_I<7>" LOC = "E4";

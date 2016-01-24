@@ -1,0 +1,397 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: cnt_epp.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "cnt_epp.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "cnt_epp"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : cnt_epp
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\pedro\GIC\PracticaLibre\Souce\cnt_epp.vhd" into library work
+Parsing entity <cnt_epp>.
+Parsing architecture <rtl> of entity <cnt_epp>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <cnt_epp> (architecture <rtl>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <cnt_epp>.
+    Related source file is "C:\Users\pedro\GIC\PracticaLibre\Souce\cnt_epp.vhd".
+    Found 1-bit register for signal <DSBD>.
+    Found 1-bit register for signal <ASBD>.
+    Found 1-bit register for signal <DIR_VLD>.
+    Found 1-bit register for signal <DATO_VLD>.
+    Found 8-bit register for signal <DIR>.
+    Found 8-bit register for signal <DATO>.
+    Found 1-bit tristate buffer for signal <DATA<7>> created at line 37
+    Found 1-bit tristate buffer for signal <DATA<6>> created at line 37
+    Found 1-bit tristate buffer for signal <DATA<5>> created at line 37
+    Found 1-bit tristate buffer for signal <DATA<4>> created at line 37
+    Found 1-bit tristate buffer for signal <DATA<3>> created at line 37
+    Found 1-bit tristate buffer for signal <DATA<2>> created at line 37
+    Found 1-bit tristate buffer for signal <DATA<1>> created at line 37
+    Found 1-bit tristate buffer for signal <DATA<0>> created at line 37
+    Summary:
+	inferred  20 D-type flip-flop(s).
+	inferred   8 Tristate(s).
+Unit <cnt_epp> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 6
+ 1-bit register                                        : 4
+ 8-bit register                                        : 2
+# Tristates                                            : 8
+ 1-bit tristate buffer                                 : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 20
+ Flip-Flops                                            : 20
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <cnt_epp> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block cnt_epp, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 20
+ Flip-Flops                                            : 20
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : cnt_epp.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 22
+#      INV                         : 1
+#      LUT2                        : 4
+#      LUT3                        : 1
+#      LUT4                        : 8
+#      LUT5                        : 8
+# FlipFlops/Latches                : 20
+#      FDC                         : 18
+#      FDP                         : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 40
+#      IBUF                        : 12
+#      IOBUF                       : 8
+#      OBUF                        : 20
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              20  out of  54576     0%  
+ Number of Slice LUTs:                   22  out of  27288     0%  
+    Number used as Logic:                22  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     23
+   Number with an unused Flip Flop:       3  out of     23    13%  
+   Number with an unused LUT:             1  out of     23     4%  
+   Number of fully used LUT-FF pairs:    19  out of     23    82%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          41
+ Number of bonded IOBs:                  41  out of    218    18%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 20    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 1.584ns (Maximum Frequency: 631.413MHz)
+   Minimum input arrival time before clock: 3.529ns
+   Maximum output required time after clock: 3.634ns
+   Maximum combinational path delay: 5.835ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 1.584ns (frequency: 631.413MHz)
+  Total number of paths / destination ports: 34 / 18
+-------------------------------------------------------------------------
+Delay:               1.584ns (Levels of Logic = 1)
+  Source:            ASBD (FF)
+  Destination:       DIR_VLD (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: ASBD to DIR_VLD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              9   0.447   0.830  ASBD (ASBD)
+     LUT2:I1->O            1   0.205   0.000  DFAS1 (DFAS)
+     FDC:D                     0.102          DIR_VLD
+    ----------------------------------------
+    Total                      1.584ns (0.754ns logic, 0.830ns route)
+                                       (47.6% logic, 52.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 65 / 40
+-------------------------------------------------------------------------
+Offset:              3.529ns (Levels of Logic = 2)
+  Source:            RST (PAD)
+  Destination:       DSBD (FF)
+  Destination Clock: CLK rising
+
+  Data Path: RST to DSBD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  RST_IBUF (RST_IBUF)
+     INV:I->O             20   0.206   1.092  RST_inv1_INV_0 (RST_inv)
+     FDP:PRE                   0.430          DSBD
+    ----------------------------------------
+    Total                      3.529ns (1.858ns logic, 1.671ns route)
+                                       (52.6% logic, 47.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 18 / 18
+-------------------------------------------------------------------------
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            DIR_7 (FF)
+  Destination:       DIR<7> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: DIR_7 to DIR<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.616  DIR_7 (DIR_7)
+     OBUF:I->O                 2.571          DIR_7_OBUF (DIR<7>)
+    ----------------------------------------
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 28 / 10
+-------------------------------------------------------------------------
+Delay:               5.835ns (Levels of Logic = 3)
+  Source:            DSTRB (PAD)
+  Destination:       DATA<7> (PAD)
+
+  Data Path: DSTRB to DATA<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            13   1.222   1.037  DSTRB_IBUF (DSTRB_IBUF)
+     LUT2:I0->O            8   0.203   0.802  CE_RD_inv1 (CE_RD_inv)
+     IOBUF:T->IO               2.571          DATA_7_IOBUF (DATA<7>)
+    ----------------------------------------
+    Total                      5.835ns (3.996ns logic, 1.839ns route)
+                                       (68.5% logic, 31.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    1.584|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.92 secs
+ 
+--> 
+
+Total memory usage is 253836 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

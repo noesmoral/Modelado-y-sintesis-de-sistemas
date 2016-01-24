@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/pedro/GIC/PracticaLibre/Practica/top_system1_tb_isim_par.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_textio" />
+            <top_module name="textio" />
+            <top_module name="top_system1_tb" />
+            <top_module name="vcomponents" />
+            <top_module name="vital_primitives" />
+            <top_module name="vital_timing" />
+            <top_module name="vpackage" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/top_system1_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_system1_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_system1_tb/pwait" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pwait</obj_property>
+      <obj_property name="ObjectShortName">pwait</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_system1_tb/dstrb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dstrb</obj_property>
+      <obj_property name="ObjectShortName">dstrb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_system1_tb/astrb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">astrb</obj_property>
+      <obj_property name="ObjectShortName">astrb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_system1_tb/pwrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pwrite</obj_property>
+      <obj_property name="ObjectShortName">pwrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_system1_tb/data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_system1_tb/switches_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">switches_i[7:0]</obj_property>
+      <obj_property name="ObjectShortName">switches_i[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_system1_tb/DUT/dato_rd" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dato_rd[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dato_rd[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider29" type="divider">
+      <obj_property name="label">ALMACENADO</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">128 128 255</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_system1_tb/DUT/dato_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dato_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dato_reg[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_system1_tb/DUT/dut_dato_vld_0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dut_dato_vld_0</obj_property>
+      <obj_property name="ObjectShortName">dut_dato_vld_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_system1_tb/DUT/dir_reg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dir_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dir_reg[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_system1_tb/DUT/dut_dir_vld_0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dut_dir_vld_0</obj_property>
+      <obj_property name="ObjectShortName">dut_dir_vld_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider28" type="divider">
+      <obj_property name="label">SALIDA</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#ffa500</obj_property>
+      <obj_property name="TextColor">230 230 230</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_system1_tb/leds_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">leds_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">leds_o[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_system1_tb/psh_button" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">psh_button</obj_property>
+      <obj_property name="ObjectShortName">psh_button</obj_property>
+   </wvobject>
+</wave_config>

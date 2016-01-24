@@ -1,0 +1,3 @@
+vhdl isim_temp "../Souce/epp_device.vhd"
+vhdl isim_temp "../Souce/cnt_epp.vhd"
+vhdl isim_temp "../Souce/cnt_epp_tb.vhd"
